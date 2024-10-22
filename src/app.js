@@ -14,16 +14,17 @@ let Numbers = [
   "3"
 ];
 let icon = ["♦", "♥", "♠", "♣"];
-// this one is for my numbers
+
+// This one is for my numbers
 let NumbersAleatorio = Numbers[Math.floor(Math.random() * Numbers.length)];
 
-// this one for my icon
+// This one is for my icon
 let iconAleatorio = icon[Math.floor(Math.random() * icon.length)];
 
-// random for my number card
+// Random for my number card
 document.querySelector(".medium").textContent = NumbersAleatorio;
 
-// random for my icon
+// Random for my icon
 let elementomyicons = document.querySelectorAll(".heart");
 elementomyicons.forEach(function(elemento) {
   elemento.textContent = iconAleatorio;
